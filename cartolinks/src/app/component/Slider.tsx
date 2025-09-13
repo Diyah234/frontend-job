@@ -122,7 +122,7 @@ const Slider : React.FC<GenerateProps> = ({ darkMode }) => {
             transform: `translateX(-${currentIndex * 66.67}%)`,
           }}
         >
-          {slides.map((slide, index) => (
+          {slides.map((slide) => (
             <div 
               key={slide.id}
               className="relative flex-shrink-0 h-96 rounded-2xl overflow-hidden mr-6"
