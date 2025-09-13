@@ -27,7 +27,7 @@ const Navbar : React.FC<GenerateProps> = ({ darkMode, toggleDarkMode }) => {
     <div className='flex flex-row justify-between p-4 px-6 items-center'>
         <div className={`flex flex-row p-4 items-center gap-2 ${darkMode ? 'text-white' : 'text-black'}`}>
             <h1 className='font-bold text-2xl'>K</h1>
-            <div className='bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-full p-3 ml-4'></div>
+            <div className='bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-full p-3 ml-4 cursor-pointer'></div>
             <div className="text-sm">Benevolent</div>
             <div><FaAngleDown size={'10px'} /></div>
         </div>
@@ -40,8 +40,8 @@ const Navbar : React.FC<GenerateProps> = ({ darkMode, toggleDarkMode }) => {
             <div className={active =="folder" ? 'bg-white shadow-md rounded-xl p-2 px-3 cursor-pointer' : ""} onClick={() =>setActiveMenu ('folder')}><FaFolder/> </div>
         </div>
         <div className='flex flex-row p-4 items-center gap-3'>
-            <div className="bg-gray-200 rounded-xl p-2 flex flex-row items-center gap-2"><RiGalleryFill /><span className='text-sm'>Gallery</span> </div>
-            <div className="bg-gray-200 rounded-xl p-2 flex flex-row items-center gap-2"><BiSupport /> <span className='text-sm'>Support</span> </div>
+            <div className="bg-gray-200 rounded-xl p-2 flex flex-row items-center gap-2 cursor-pointer"><RiGalleryFill /><span className='text-sm'>Gallery</span> </div>
+            <div className="bg-gray-200 rounded-xl p-2 flex flex-row items-center gap-2 cursor-pointer cursor-pointer"><BiSupport /> <span className='text-sm'>Support</span> </div>
             <div className="bg-gray-200 rounded-xl p-2"><FaBell /></div>
             <div className="bg-gray-200 rounded-xl p-2 cursor-pointer" onClick={toggleDarkMode}><MdLightMode /></div>
             <div className="bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-full p-3" ></div>

@@ -72,7 +72,7 @@ const Generate: React.FC<GenerateProps> = ({ darkMode }) => {
                 <div className='flex flex-row gap-2 '><h4 className={`font-semibold text-sm  ${darkMode ? 'text-white' : 'text-black'}`}>{item.title}</h4>{item.new && <span className='text-xs bg-blue-600 text-white px-2 mt-1 h-4 rounded-2xl'>{item.new}</span>}</div>
                 <p className='text-xs w-11/12 text-gray-400 '>{item.text}</p>
                 </div>
-                <div className='mt-6 bg-gray-200 p-1 px-3 rounded-2xl text-sm'>Open</div>
+                <div className='mt-6 bg-gray-200 p-1 px-3 rounded-2xl text-sm cursor-pointer'>Open</div>
               </div>
               
             </div>
@@ -87,7 +87,7 @@ const Generate: React.FC<GenerateProps> = ({ darkMode }) => {
                 <p className='text-xs w-11/12 text-gray-400 '>Teach people to replicate your style, products, or characters</p>
                 
               </div>
-              <div  className='mt-6 bg-gray-200 p-1 px-3 rounded-2xl text-sm'>Open</div>
+              <div  className='mt-6 bg-gray-200 p-1 px-3 rounded-2xl text-sm cursor-pointer'>Open</div>
               </div>
             </div>
         </div>
@@ -96,8 +96,8 @@ const Generate: React.FC<GenerateProps> = ({ darkMode }) => {
     <div className='flex flex-row justify-between items-center mt-12'>
       <div><h2 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>Gallery</h2></div>
       <div className='flex flex-row gap-2'>
-        <div className='flex flex-row bg-gray-200 rounded-xl p-1 px-2 gap-2 text-sm'><Scale size={20} /> <span>Legal</span></div>
-        <div className='flex flex-row bg-gray-200 rounded-xl p-1 px-2 gap-2 text-sm'><Wallet size={20}/> <span>Pricing</span></div>
+        <div className='flex flex-row bg-gray-200 rounded-xl p-1 px-2 gap-2 text-sm cursor-pointer'><Scale size={20} /> <span>Legal</span></div>
+        <div className='flex flex-row bg-gray-200 rounded-xl p-1 px-2 gap-2 text-sm cursor-pointer'><Wallet size={20}/> <span>Pricing</span></div>
       </div>
     </div>
     </div>

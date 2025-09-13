@@ -8,7 +8,7 @@ const Footer = () => {
             <h1 className='text-2xl'>Krea AI</h1>
         </div>
         <div className='flex flex-row gap-4'>
-            <h1 className='text-2xl'>curated by</h1>
+            <h1 className='text-2xl mt-1'>curated by</h1>
             <h1 className='text-3xl font-bold'>Mobbin</h1>
         </div>
     </div>
